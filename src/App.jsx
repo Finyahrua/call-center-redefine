@@ -42,19 +42,20 @@ function App() {
     setRegion(region);
     setUserName(userName);
     setPhoneNumbers(phoneNumbers.filter((_, index) => index !== randomIndex));
+    console.log("phone number lenght", phoneNumbers.length);
   };
 
   return (
     <div className="font-poppins">
       <section class="bg-white">
         <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
-          <section class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+          <section class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6 ">
             <img
               alt="Night"
-              src="//images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FsbCUyMGNlbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=870&q=80"
-              class="absolute inset-0 h-full w-full object-cover opacity-90"
+              src="https://img.freepik.com/free-photo/office-worker-wheelchair-user-answering-landline-phone-call-having-remote-conversation-telephone-line-disability-friendly-office-man-with-chronic-impairment-using-telework-chat-line_482257-44030.jpg?w=740&t=st=1677247059~exp=1677247659~hmac=41113ec52ff94433469281a7eb2b1c743045dbcb1735c2367aca63a0e3392959"
+              class="absolute inset-0 h-full w-full object-cover opacity-90 "
             />
-            <div className="absolute h-full w-full object-cover bg-blue-800 opacity-40 bg-blend-multiply"></div>
+            <div className="absolute h-full w-full object-cover bg-blue-800 opacity-40 "></div>
 
             <div class="hidden lg:relative lg:block lg:p-12">
               <h2 class="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
